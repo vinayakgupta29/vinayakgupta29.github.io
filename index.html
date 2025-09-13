@@ -1,107 +1,220 @@
-<html>
+<!DOCTYPE html5>
+
+<html lang="en">
 
 <head>
-  <style>
-    * {
-      padding: 5px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinayak Gupta</title>
+  <link href="https://fonts.cdnfonts.com/css/sans-comic-sans" rel="stylesheet">
 
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Italianno&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-    :root {
-      --green: #2e7d32;
-      /* normal */
-      --green-dark: #1b5e20;
-      /* visited/active */
-    }
-
-
-
-    nav {
-      background-color: #ababab;
-      width: 50%;
-
-      /* Base link style */
-      a:link {
-        color: var(--green);
-        text-decoration: none;
-        /* optional */
-      }
-
-      /* After visiting the link */
-      a:visited {
-        color: var(--green-dark);
-      }
-    }
-
-    body {
-      background: black;
-      color: white;
-      font-size: 20;
-    }
-
-    .blog_a {
-      color: tan;
-
-    }
-
-    .contact_a {
-      color: peru;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./swtich.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-  <nav>
-    <a href="https://vinayakgupta29.github.io/portfolio" target="_blank"> Portfolio </a>
-  </nav>
-  <br>
-  <p>Greeting Shire Folks, I'm your local Wizard 🧙‍♂️, Physics Student and A Programming Enthusiast...
-  </p>
-  <p>
-    Known to the Masses as Vinayak Gupta...
-  </p>
-  <p>
-    During my Bachelor's Degree in Technology in the Computer Science department I got the chance to harbour and cherish
-    my
-    love for all things <b>STEM</b>... I already had a vested interest in Science and it expanded to Computers as well
-    during
-    that course... If you also thinks that computers are <i>Cool</i> you have at least one thing in common with me...
-  </p>
+  <!--<input id="dark-toggle" type="checkbox" aria-label="Toggle dark mode">
+  <div class="switch-wrapper">
+    <label class="switch" for="dark-toggle"><span class="slider"></span></label>
+  </div> -->
 
-  To find more cool things in Common Feel free to Connect <a href="#contact">Connect</a>...
+  <input type="checkbox" id="dark-toggle" hidden>
 
-  <p>
-    I have a Blog Site called <a href="https://vinayakgupta29.github.io/blogs" class="blog_a"
-      target="_blank">Abhivyakti</a><br>
-    Where I share my thoughts and experiments related to Computers and All things that interest me...
-  </p>
-  <p> For most of my life... Yes, I'm a hermit and you wouldn't find me socially and platforms like LinkedIn and Twitter
-    are
-    nothing but echo chamber for egotistical Gnomes and Elves... But if you have Darwen Blood in you feel free to
-    connect
-    and we can create... </p>
+  <div class="switch-wrapper">
 
-  <p>
-    Soon I'll be making my micro blogging site where I'd post things that don't require a complete blog post and would
-    get me cancelled if posted on Twitter and wanna keep it away from recruiters who want to be politically correct...
-  </p>
+    <label for="dark-toggle" class="toggle switch">
+      <img src="icons/moon.png" alt="Moon" class="icon moon">
+      <img src="icons/sun.png" alt="Sun" class="icon sun">
+    </label>
+  </div>
 
-  <p>Following that would be a Forum/Discussion Site where we can chat and discuss on things we find cool and
-    interesting without
-    being afraid of idiots meddling in our conversation on Twitter and LinkedIn... Leading a Scientific and Nerdy and
-    Productive
-    discussion into a Heated nonsensical political mayhem</p>
 
-  <p> Cause It's not piracy if you don't own the Thing...
-  </p>
-  <section id="contact">
-    Email : <a href="mailto:vinayakg236@gmail.com" class="contact_a">vinayakg236@gmail.com</a>
+  <div class="site">
+    <header>
+      <h1>Vinayak Gupta</h1>
+      <div class="container-headp">
+        <p class="headp">Thoughts, work, and projects</p>
+      </div>
+    </header>
 
-  </section>
-  <br><br><br><br><br>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#experience">Experience</a>
+      <a href="#blog">Blog</a>
+      <a href="#microblogs" class="disabled">Microblogs</a>
+      <a href="#projects">Projects</a>
+      <a href="#certs">Certificates</a>
+      <a href="#research" class="disabled">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <!-- Homepage intro -->
+      <section id="home">
+        <h2>Main {</h2>
+        <p>Greeting Shire Folks, I'm your local Wizard 🧙‍♂️, Physics Student and A Programming Enthusiast...
+        </p>
+        <p>
+          Known to the Masses as Vinayak Gupta...
+        </p>
+        <p>
+          During my Bachelor's Degree in Technology in the Computer Science department I got the chance to harbour and
+          cherish
+          my
+          love for all things <b>STEM</b>... I already had a vested interest in Science and it expanded to Computers as
+          well
+          during
+          that course... If you also thinks that computers are <i>Cool</i> you have at least one thing in common with
+          me...
+        </p>
+        <img src="./icons/arch.png" alt="">
+        <span class="text">
+          I use Arch Btw
+        </span><br>
+        <p>
+          I have a Blog Site called <a href="https://vinayakgupta29.github.io/blogs" class="blog_a"
+            target="_blank">Abhivyakti</a><br>
+          Where I share my thoughts and experiments related to Computers and All things that interest me...
+        </p>
+        <p> For most of my life... Yes, I'm a hermit and you wouldn't find me socially and platforms like LinkedIn and
+          Twitter
+          are
+          nothing but echo chamber for egotistical Gnomes and Elves... But if you have Darwen Blood in you feel free to
+          connect
+          and we can create... </p>
+
+        <p>
+          Soon I'll be making my micro blogging site where I'd post things that don't require a complete blog post and
+          would
+          get me cancelled if posted on Twitter and wanna keep it away from recruiters who want to be politically
+          correct...
+        </p>
+
+        <p>Following that would be a Forum/Discussion Site where we can chat and discuss on things we find cool and
+          interesting without
+          being afraid of idiots meddling in our conversation on Twitter and LinkedIn... Leading a Scientific and Nerdy
+          and
+          Productive
+          discussion into a Heated nonsensical political mayhem</p>
+
+        <p> Cause It's not piracy if you don't own the Thing...</p><br>
+
+        <span class="text-secondary">}</span>
+      </section>
+
+      <!-- Timeline Experience -->
+      <section id="experience">
+        <h2>Work Experience (Summary) {</h2>
+        <div class="timeline">
+          <div class="timeline-entry">
+            <h3>Tech Lead - Medoc Health</h3>
+            <p><em>Feb 2023 – Jul 2025</em></p>
+            <p>Leading a team building scalable web apps and Native appliations...</p>
+          </div>
+          <div class="timeline-entry">
+            <h3>Freelance Developer - Appable Technology</h3>
+            <p><em>Jul 2023 – Jun 2024</em></p>
+            <p>Focused on UI/UX improvements and performance.</p>
+          </div>
+        </div>
+        <span class="text-secondary">}</span> <br>
+        <a class="btn" href="https://vinayakgupta29.github.io/portfolio" target="_blank">Behold... full portfolio →</a>
+      </section>
+
+      <!-- Blog previews -->
+      <section id="blog">
+        <h2>Blog</h2>
+        <article>
+          <h3><a href="https://vinayakgupta29.github.io/blogs/tech/arch%20linux/hypland/2025/07/05/hyprland-config.html"
+              target="_blank">
+              Setting up <i>Hyprland</i>
+              with Arch</a></h3>
+          <p>A clear text guide to setting up Hyprland on Arch Linux</p>
+        </article>
+        <article>
+          <h3><a href="https://vinayakgupta29.github.io/blogs/2025/08/04/Aur-Hame-Vishvaguru-Banana-hai.html"
+              target="_blank">
+              Aur Hame Vishvaguru Banana hai</a></h3>
+          <p>An artistic take on the situation of my beautiful country</p>
+        </article>
+        <a class="btn" href="https://vinayakgupta29.github.io/blogs" target="_blank">Peek more blogs →</a>
+      </section>
+
+      <!-- Microblogs -->
+      <!-- <section id="microblogs">
+        <h2>Microblogs</h2>
+        <article>
+          <p>💡 Quick thought of the day...</p>
+        </article>
+        <article>
+          <p>🚀 Something exciting you’re working on...</p>
+        </article>
+      </section>
+      -->
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Technical Projects</h2>
+        <article>
+          <h3><a href="https://github.com/vinayakgupta29/smashers_sfml">SFML Smashers</a></h3>
+          <p>A simple smashing game made to quench my <i>ADHD</i> and powered by the raw power of C++</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/vinayakgupta29/personal_bahi_khata">Personal Bahi Khata</a></h3>
+          <p>An offline cross platform app facilitating expense tracking powered by Encryption and Cryptography...
+            <a href="https://play.google.com/store/apps/details?id=com.vins.bahi_khata&pcampaignid=web_share">
+              <i class="fab fa-google-play"></i></a>
+          </p>
+        </article>
+      </section>
+
+      <!-- Certificates -->
+      <section id="certs">
+        <h2>Licenses & Certificates</h2>
+        <article>
+          <h3>Cyber Security and Ethical Hacking</h3>
+          <p><em>Issued by IGTR Indore, 2025</em></p>
+        </article>
+
+      </section>
+
+      <!-- Research -->
+      <!-- <section id="research">
+        <h2>Research Work</h2>
+        <article>
+          <h3><a href="#">Research Paper Title</a></h3>
+          <p>Short abstract or description...</p>
+        </article>
+      </section> -->
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Ping Me</h2>
+        <p>Email me at <a href="mailto:vinayakg236@gmail.com">vinayakg236@gmail.com</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Vinayak Gupta</p>
+      <div class="socials">
+        <a href="https://github.com/vinayakgupta29" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vinayak-gupta-70a808202/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/username" target="_blank" aria-label="Twitter" class="disabled">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="mailto:vinayakg236@gmail.com" target="_blank" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
 </body>
-<footer>
-  Copyright (c) 2025 Vinayak Gupta. All Rights Reserved.
-</footer>
 
 </html>

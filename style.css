@@ -1,0 +1,352 @@
+/* --- hidden toggle input --- */
+#dark-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+/* --- dark mode switch wrapper --- */
+.switch-wrapper {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* --- slider for toggle --- */
+.slider {
+  width: 44px;
+  height: 24px;
+  border-radius: 999px;
+  background: #ccc;
+  position: relative;
+  transition: background .22s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ebebeb;
+  top: 2px;
+  left: 2px;
+  transition: transform .22s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* --- base dark theme layout --- */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: #ebebeb;
+  /* cooler white */
+  background: #111;
+  transition: background .25s, color .25s;
+}
+
+header,
+.headp,
+footer {
+  background: #34495e;
+  /* new compatible header/footer color */
+  color: #D5DBDB;
+  /* cooler white text */
+  padding: 0.5rem;
+
+  text-align: center;
+
+  font-family: "Italianno", sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.container-headp {
+  display: inline-block;
+}
+
+
+.headp {
+  font-size: 3rem;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+
+
+footer p {
+  font-size: 2rem;
+  font-family: "Italianno", sans-serif;
+}
+
+footer a {
+  padding-bottom: 2rem;
+}
+
+
+/* --- global link styles with fading underline --- */
+a,
+a:visited {
+  color: #F7DC6F;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+  font-family: "Fira Mono";
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* --- navigation --- */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a,
+nav a:visited {
+  padding: 0.8rem 1rem;
+  color: #A966BE;
+}
+
+/* --- main content --- */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+
+p,
+.text,
+.text-secondary {
+  color: #ebebeb;
+  font-family: "Play Fair";
+}
+
+article {
+  background: #1f1f1f;
+  padding: .8rem 1rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid #D2B4DE;
+}
+
+/* --- homepage intro --- */
+#home {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* --- timeline --- */
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 2.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  width: 8px;
+  background: #2c3e50;
+  border-radius: 2px;
+}
+
+.timeline-entry {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 1.5rem;
+}
+
+.timeline-entry::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: -30px;
+  width: 16px;
+  height: 16px;
+  background: #2c3e50;
+  border-radius: 50%;
+  border: 3px solid #ebebeb;
+  box-shadow: 0 0 0 2px #2c3e50;
+  z-index: 2;
+}
+
+/* --- headings --- */
+
+
+h2,
+.text-secondary {
+  color: #AED6F1;
+  font-size: 30px;
+  opacity: 1;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-family: "Great Vibes";
+}
+
+h3 {
+  font-family: "Great Vibes";
+}
+
+/* --- buttons --- */
+.btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  color: #ebebeb;
+  background: #2c3e50;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #1b2838;
+}
+
+/* --- contact section --- */
+#contact {
+  margin: 3rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#contact a {
+  color: #A99BEF;
+}
+
+#contact a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+#contact a:hover::after {
+  width: 100%;
+}
+
+/* --- footer socials --- */
+.socials {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.socials a {
+  font-size: 2rem;
+  color: #ebebeb;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* --- LIGHT THEME when toggle checked --- */
+#dark-toggle:checked~.site {
+  background: #D5DBDB;
+  color: #222;
+}
+
+#dark-toggle:checked~.site header,
+#dark-toggle:checked~.site .headp,
+#dark-toggle:checked~.site footer {
+  background: #2c3e50;
+  color: #ebebeb;
+}
+
+#dark-toggle:checked~.site nav {
+  background: #34495e;
+}
+
+#dark-toggle:checked~.site nav a {
+  color: #ebeebb;
+}
+
+#dark-toggle:checked~.site a {
+  color: #2C3E50;
+}
+
+#dark-toggle:checked~.site a.btn {
+  background: #2c3e50;
+  color: #ebebeb;
+}
+
+#dark-toggle:checked~.site a.btn:hover {
+  background: #1b2838;
+}
+
+#dark-toggle:checked~.site h2 {
+  color: #2C3E50;
+}
+
+#dark-toggle:checked~.site p,
+#dark-toggle:checked~.site .text-secondary,
+#dark-toggle:checked~.site .text {
+  color: #2C3E50;
+}
+
+#dark-toggle:checked~.site article {
+  background: #f7f7f7;
+  border-color: #2c3e50;
+}
+
+#dark-toggle:checked~.site #contact a {
+  color: #2C3E50;
+}
+
+/*===================================*/
