@@ -1,4 +1,6 @@
 /* --- hidden toggle input --- */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Italianno&family=Playfair+Display&display=swap");
+
 #dark-toggle {
   position: absolute;
   width: 1px;
@@ -173,6 +175,35 @@ article {
 }
 
 /* --- homepage intro --- */
+
+
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-y: auto;
+}
+
+section {
+  min-height: 120vh;
+  /* can be any height above 100vh */
+  padding: 2rem;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+footer {
+  height: 100vh;
+  padding: 2rem;
+}
+
+/* Optional for visual debugging */
+
+
+footer {
+  background: #ccc;
+}
+
 #home {
   margin: 2rem 0;
   font-size: 1.2rem;

@@ -1,220 +1,258 @@
-<!DOCTYPE html5>
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vinayak Gupta</title>
-  <link rel="icon" type="image/x-icon" href="icons/favicon.svg">
-
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Italianno&family=Playfair+Display&display=swap"
+  <title>My Chaotic Universe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Architects+Daughter&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style/style.css">
-
-  <link rel="stylesheet" type="text/css" href="style/swtich.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!--<input id="dark-toggle" type="checkbox" aria-label="Toggle dark mode">
-  <div class="switch-wrapper">
-    <label class="switch" for="dark-toggle"><span class="slider"></span></label>
-  </div> -->
 
-  <input type="checkbox" id="dark-toggle" hidden>
+  <header class="page-header">
+    <img src="assets/avatar.png" alt="My Avatar">
+    <h1>Vinayak Gupta</h1>
+    <p>A little bit of everything, all at once.</p>
+  </header>
 
-  <div class="switch-wrapper">
-
-    <label for="dark-toggle" class="toggle switch">
-      <img src="icons/moon.png" alt="Moon" class="icon moon">
-      <img src="icons/sun.png" alt="Sun" class="icon sun">
-    </label>
+  <div class="theme-switch-wrapper">
+    <button id="theme-toggle-button" class="theme-switch-button">
+      <i class="fas fa-moon"></i>
+    </button>
   </div>
 
+  <main class="chaos-container">
 
-  <div class="site">
-    <header>
-      <h1>Vinayak Gupta</h1>
-      <div class="container-headp">
-        <p class="headp">Thoughts, work, and projects</p>
+    <div class="chaos-item intro-card">
+      <h2>About My Brain.</h2>
+      <p>
+        click here to read my full intro.
+      </p>
+    </div>
+
+
+    <div class="full-intro-popup">
+      <div class="full-intro-popup-content">
+
+
+        <button class="close-button" id="close-intro-popup">&times;</button>
+        <h2>This is My Universe.</h2>
+        <p>
+          Hey. You’ve found the one-stop shop for my entire brain. This place isn't meant to be a polished portfolio or
+          a neatly organized blog. If you’re here looking for something that makes perfect, linear sense, you might be
+          in the wrong place. But if you’ve ever felt like your thoughts are a tangled mess of bright threads, all
+          demanding your attention at once—art, music, writing, and a thousand half-baked ideas—then you might feel
+          right at home.
+
+          This website is a direct reflection of my ADHD and Autistic mind. For me, life is a kaleidoscope of
+          hyperfixations and special interests, a constant, beautiful, and sometimes overwhelming hum of creative
+          energy. I don’t experience the world in neatly categorized folders; I experience it as a whirlwind of sensory
+          input, a symphony of ideas that often collide, and sometimes create something surprisingly wonderful in the
+          chaos.
+
+          This is a place where a snippet of a poem can sit right next to a satirical take on modern life, where a link
+          to my Twitch stream is a heartbeat away from a piece of my digital art. It’s not disorganized, it’s organized
+          according to a logic that only makes sense inside my head—a logic of passion, impulse, and deep, focused
+          curiosity. The disorder you see is actually a deeply personal form of order. Each "messy" card on this page is
+          a part of me. It's not a resume; it’s a living map of what I am passionate about right now. Some of these
+          things might stick around, while others might disappear as my focus shifts.
+
+          I've learned to stop fighting the chaos and start embracing it. This site is my playground, my digital
+          sketchbook, and my personal library all at once. It's where I can dump a random thought, showcase a completed
+          project, and share a piece of music I'm obsessed with, all without the pressure of a professional facade. It's
+          a safe space to be authentically me.
+
+          So, feel free to poke around. Click on anything that catches your eye. There's no right way to navigate this
+          site. There’s no predetermined path. Just let your own curiosity guide you. And if you find something you
+          like, or if a particular piece of chaos resonates with you, don't be a stranger. Hit me up on one of the links
+          below. You're now a part of my universe.
+        </p>
       </div>
-    </header>
+    </div>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#experience">Experience</a>
-      <a href="#blog">Blog</a>
-      <a href="#microblogs" class="disabled">Microblogs</a>
-      <a href="#projects">Projects</a>
-      <a href="#certs">Certificates</a>
-      <a href="#research" class="disabled">Research</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <section class="chaos-item timeline-section">
+      <h2>Work History 💼</h2>
+      <div class="timeline-item">
+        <h4>Tech Lead @ Medoc Health</h4>
+        <p>FEB 2023 - Jul 2025</p>
+        <p>Built and managed a bunch of cool apps for Healthcare IT</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Freelance Developer @ Appable Technologies</h4>
+        <p>JUL 2023 - JUN 2024</p>
+        <p>Built out a project portfolio with Full Stack Development</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Software Developer Inter @ Medoc Health</h4>
+        <p>AUG 2022 - JAN 2023</p>
+        <p> Gave my career a head start by learning the modern cross-platform tech Flutter and too in production</p>
+      </div>
+    </section>
 
-    <main>
-      <!-- Homepage intro -->
-      <section id="home">
-        <h2>Main {</h2>
-        <p>Greeting Shire Folks, I'm your local Wizard 🧙‍♂️, Physics Student and A Programming Enthusiast...
-        </p>
-        <p>
-          Known to the Masses as Vinayak Gupta...
-        </p>
-        <p>
-          During my Bachelor's Degree in Technology in the Computer Science department I got the chance to harbour and
-          cherish
-          my
-          love for all things <b>STEM</b>... I already had a vested interest in Science and it expanded to Computers as
-          well
-          during
-          that course... If you also thinks that computers are <i>Cool</i> you have at least one thing in common with
-          me...
-        </p>
-        <img src="./icons/arch.png" alt="">
-        <span class="text">
-          I use Arch Btw
-        </span><br>
-        <p>
-          I have a Blog Site called <a href="https://vinayakgupta29.github.io/blogs" class="blog_a"
-            target="_blank">Abhivyakti</a><br>
-          Where I share my thoughts and experiments related to Computers and All things that interest me...
-        </p>
-        <p> For most of my life... Yes, I'm a hermit and you wouldn't find me socially and platforms like LinkedIn and
-          Twitter
-          are
-          nothing but echo chamber for egotistical Gnomes and Elves... But if you have Darwen Blood in you feel free to
-          connect
-          and we can create... </p>
+    <section class="chaos-item blog-section">
+      <h2>The Brain Dump Blog ✍️</h2>
+      <div class="blog-grid">
 
-        <p>
-          Soon I'll be making my micro blogging site where I'd post things that don't require a complete blog post and
-          would
-          get me cancelled if posted on Twitter and wanna keep it away from recruiters who want to be politically
-          correct...
-        </p>
-
-        <p>Following that would be a Forum/Discussion Site where we can chat and discuss on things we find cool and
-          interesting without
-          being afraid of idiots meddling in our conversation on Twitter and LinkedIn... Leading a Scientific and Nerdy
-          and
-          Productive
-          discussion into a Heated nonsensical political mayhem</p>
-
-        <p> Cause It's not piracy if you don't own the Thing...</p><br>
-
-        <span class="text-secondary">}</span>
-      </section>
-
-      <!-- Timeline Experience -->
-      <section id="experience">
-        <h2>Work Experience (Summary) {</h2>
-        <div class="timeline">
-          <div class="timeline-entry">
-            <h3>Tech Lead - Medoc Health</h3>
-            <p><em>Feb 2023 – Jul 2025</em></p>
-            <p>Leading a team building scalable web apps and Native appliations...</p>
+        <div class="blog-card blog-item">
+          <div class="blog-content">
+            <h3>Blog Post 1: Why I Embraced the Chaos</h3>
+            <p>A look at how I turned my neurodivergence into a creative strength.</p>
+            <div class="blog-links">
+              <a href="your-blog-link-1" target="_blank">Read Post</a>
+            </div>
           </div>
-          <div class="timeline-entry">
-            <h3>Freelance Developer - Appable Technology</h3>
-            <p><em>Jul 2023 – Jun 2024</em></p>
-            <p>Focused on UI/UX improvements and performance.</p>
+          <div class="blog-media">
+            <img
+              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3ZpdjBhcm1rb3FtbjBqZ2F3ZTNrY205YWN3NmVsdXQ1eW96a2w3OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kFgz0z2vE6Pj2c9hQO/giphy.gif"
+              alt="Blog 1 GIF">
           </div>
         </div>
-        <span class="text-secondary">}</span> <br>
-        <a class="btn" href="https://vinayakgupta29.github.io/portfolio" target="_blank">Behold... full portfolio →</a>
-      </section>
 
-      <!-- Blog previews -->
-      <section id="blog">
-        <h2>Blog</h2>
-        <article>
-          <h3><a href="https://vinayakgupta29.github.io/blogs/tech/arch%20linux/hypland/2025/07/05/hyprland-config.html"
-              target="_blank">
-              Setting up <i>Hyprland</i>
-              with Arch</a></h3>
-          <p>A clear text guide to setting up Hyprland on Arch Linux</p>
-        </article>
-        <article>
-          <h3><a href="https://vinayakgupta29.github.io/blogs/2025/08/04/Aur-Hame-Vishvaguru-Banana-hai.html"
-              target="_blank">
-              Aur Hame Vishvaguru Banana hai</a></h3>
-          <p>An artistic take on the situation of my beautiful country</p>
-        </article>
-        <a class="btn" href="https://vinayakgupta29.github.io/blogs" target="_blank">Peek more blogs →</a>
-      </section>
+        <div class="blog-card blog-item">
+          <div class="blog-content">
+            <h3>Blog Post 2: The Art of Getting Lost</h3>
+            <p>Sometimes the best code comes from wandering down rabbit holes. A short essay on curiosity.</p>
+            <div class="blog-links">
+              <a href="your-blog-link-2" target="_blank">Read Post</a>
+            </div>
+          </div>
+          <div class="blog-media">
+            <img
+              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjFxaTR0anVvb2psanF6dDBqbzJkdXN6cjZtM25nZmFqd3Y3aXBueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dFfC352r58iWc3IuMv/giphy.gif"
+              alt="Blog 2 GIF">
+          </div>
+        </div>
 
-      <!-- Microblogs -->
-      <!-- <section id="microblogs">
-        <h2>Microblogs</h2>
-        <article>
-          <p>💡 Quick thought of the day...</p>
-        </article>
-        <article>
-          <p>🚀 Something exciting you’re working on...</p>
-        </article>
-      </section>
-      -->
-      <!-- Projects -->
-      <section id="projects">
-        <h2>Technical Projects</h2>
-        <article>
-          <h3><a href="https://github.com/vinayakgupta29/smashers_sfml">SFML Smashers</a></h3>
-          <p>A simple smashing game made to quench my <i>ADHD</i> and powered by the raw power of C++</p>
-        </article>
-        <article>
-          <h3><a href="https://github.com/vinayakgupta29/personal_bahi_khata">Personal Bahi Khata</a></h3>
-          <p>An offline cross platform app facilitating expense tracking powered by Encryption and Cryptography...
-            <a href="https://play.google.com/store/apps/details?id=com.vins.bahi_khata&pcampaignid=web_share">
-              <i class="fab fa-google-play"></i></a>
-          </p>
-        </article>
-      </section>
-
-      <!-- Certificates -->
-      <section id="certs">
-        <h2>Licenses & Certificates</h2>
-        <article>
-          <h3>Cyber Security and Ethical Hacking</h3>
-          <p><em>Issued by IGTR Indore, 2025</em></p>
-        </article>
-
-      </section>
-
-      <!-- Research -->
-      <!-- <section id="research">
-        <h2>Research Work</h2>
-        <article>
-          <h3><a href="#">Research Paper Title</a></h3>
-          <p>Short abstract or description...</p>
-        </article>
-      </section> -->
-
-      <!-- Contact -->
-      <section id="contact">
-        <h2>Ping Me</h2>
-        <p>Email me at <a href="mailto:vinayakg236@gmail.com">vinayakg236@gmail.com</a></p>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 Vinayak Gupta</p>
-      <div class="socials">
-        <a href="https://github.com/vinayakgupta29" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/vinayak-gupta-70a808202/" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://twitter.com/username" target="_blank" aria-label="Twitter" class="disabled">
-          <i class="fab fa-x-twitter"></i>
-        </a>
-        <a href="mailto:vinayakg236@gmail.com" target="_blank" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
+        <div class="blog-card blog-item">
+          <div class="blog-content">
+            <h3>Blog Post 3: My Favorite Obscure Music</h3>
+            <p>A list of songs that get my brain buzzing, from forgotten indie bands to experimental electronica.</p>
+            <div class="blog-links">
+              <a href="your-blog-link-3" target="_blank">Read Post</a>
+            </div>
+          </div>
+          <div class="blog-media">
+            <img
+              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDVqbmZia25ydGhmMjZ0NWc5ejQ4Z3R5ZnNlZHliMGlzdnB2bWlqNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Vz9c7wV4gGjD2L2p0N/giphy.gif"
+              alt="Blog 3 GIF">
+          </div>
+        </div>
       </div>
-    </footer>
-  </div>
+      <div class="action-buttons">
+        <a href="https://vinayakgupta29.github.io/blogs/">See More Blogs</a>
+      </div>
+    </section>
+
+    <section class="chaos-item project-section">
+      <h2>Technical Projects 💻</h2>
+      <div class="project-grid">
+
+        <div class="project-card project-item">
+          <div class="project-content">
+            <h3>Project 1: Personal Bahi Khata</h3>
+            <p>An offline cross platform app facilitating expense tracking powered by Encryption and Cryptography...</p>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/details?id=com.vins.bahi_khata&pcampaignid=web_share"
+                target="_blank">View Project</a>
+              <a href="#" target="_blank" class="github-link disabled"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-media">
+            <img src="assets/Screenshot_2024-02-09-17-43-54-58_bda9946562fe04081165a9124e0fc1f4.jpg"
+              alt="Project 1 GIF">
+          </div>
+        </div>
+
+        <div class="project-card project-item">
+          <div class="project-content">
+            <h3>Project 2: SFML Smashers</h3>
+            <p>A simple smashing game made to quench my <i>ADHD</i> and powered by the raw power of C++</p>
+            <div class="project-links">
+              <a href="https://github.com/vinayakgupta29/smashers_sfml" target="_blank">View Project</a>
+              <a href="https://github.com/vinayakgupta29/smashers_sfml" target="_blank" class="github-link"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-media">
+            <img
+              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjFxaTR0anVvb2psanF6dDBqbzJkdXN6cjZtM25nZmFqd3Y3aXBueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dFfC352r58iWc3IuMv/giphy.gif"
+              alt="Project 2 GIF">
+          </div>
+        </div>
+
+        <div class="project-card project-item">
+          <div class="project-content">
+            <h3>Project 3: The Wobbly Portfolio</h3>
+            <p>The very website you're looking at. An ongoing experiment in a chaotic, yet functional, design.</p>
+            <div class="project-links">
+              <a href="your-portfolio-link-3" target="_blank">View Project</a>
+              <a href="https://github.com/vinayakgupta29/vinayakgupta29.github.io" target="_blank"
+                class="github-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-media">
+            <img src="assets/2025-09-19-200636_hyprshot.png" alt="Project 3 GIF">
+
+          </div>
+        </div>
+      </div>
+      <div class="action-buttons">
+        <a href="https://vinayakgupta29.github.io/portfolio/">See Full Portfolio</a>
+      </div>
+    </section>
+
+    <section class="chaos-item art-section">
+      <h2>Art 🎨</h2>
+      <img src="https://via.placeholder.com/400" alt="A cool art piece">
+      <p>A quick blurb about my art.</p>
+    </section>
+
+    <section class="chaos-item lit-section">
+      <h2>Literature & Poetry 📝</h2>
+      <blockquote>
+        "A line of poetry that's stuck in my head today."
+      </blockquote>
+    </section>
+
+    <section class="chaos-item music-section">
+      <h2>Music 🎧</h2>
+      <iframe width="250"
+        src="https://www.youtube.com/embed/videoseries?si=FXfefvHNoBf10O2J&amp;list=PLdrJqkoGIf0BsXRmTIUSlVTAfM3RILySd"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+
+    <section class="chaos-item links-section">
+      <h2>Connect with the Chaos 🔗</h2>
+      <ul class="social-links">
+        <li><a href="#" target="_blank" class="disabled"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="#" target="_blank" class="disabled"><i class="fab fa-twitch"></i></a></li>
+        <li><a href="your-discord-invite" target="_blank"><i class="fab fa-discord"></i></a></li>
+        <li><a href="your-github-link" target="_blank"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </section>
+
+    <section class="chaos-item satire-section">
+      <h2>Random Thoughts & Satire 🤔</h2>
+      <p>Today's brain dump: a satirical observation on something mundane.</p>
+    </section>
+
+    <div class="chaos-item floating-element">
+      <span>Just a random thought bubble.</span>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Chaotic Universe</p>
+  </footer>
+
+  <script src="script2.js"> </script>
 </body>
 
 </html>
