@@ -425,11 +425,15 @@
       z-index: 10;
     }
 
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     .action-buttons {
-      margin-top: 20px;
       display: flex;
       gap: 15px;
-      justify-content: flex-start;
       flex-wrap: wrap;
     }
 
